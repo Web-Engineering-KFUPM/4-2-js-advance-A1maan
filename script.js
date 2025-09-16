@@ -120,19 +120,19 @@ Task:
 */
 
 const findMax = (arr) => {
-  try{
-      if (arr.length === 0) {
-          throw new Error();
-      }
-      return Math.max(...arr);
+   return Math.max(...arr);
+};
+
+try{
+      const emptyArray = [];
+      const maxElement = findMax(emptyArray);
   } 
   catch(e) {
       console.log("Error: The array is empty.");
   }
   finally{
-      console.log("Execution completed.");
+      console.log("Function execution completed.");
   }
-};
 
 // ===================================================================================
 // TODO-7: REGEX + forEach — find words containing 'ab' and log matches from the list
